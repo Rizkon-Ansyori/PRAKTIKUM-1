@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!-- dalam contoh dibawah ada dua class yaitu satu dan dua -->
+<!-- pada contoh pertama menggunakan class satu yang mana tulisan berwarna biru dan pada contoh kedua menggunakan class dua berwarna hitam. untuk tag <p> akan mengikuti 
+	 inherit dari class satu dan dua -->
+		<title>Contoh Inheritance dalam CSS</title>
+		<style type="text/css">
+		div.satu {
+		border: 1px solid black;
+		color: blue;
+		}
+		div.dua {
+		border: 1px solid black;
+		}
+		p.dua {
+		border: inherit;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="satu">
+		<p class="satu">
+		Kalimat ini tanpa <em class="satu">nilai property
+		inherit</em> CSS
+		</p>
+		</div>
+		<br />
+		<div class="dua">
+		<p class="dua">
+		Kalimat ini menggunakan <em class="dua">nilai property
+		inherit</em> CSS
+		</p>
+		</div>
+	</body>
+</html>

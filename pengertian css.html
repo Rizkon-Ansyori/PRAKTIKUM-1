@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Tag Font HTML</title>
+	</head>
+<!-- pada contoh yang pertama. dituliskan tag <font> beberapa kali disetiap paragraf untuk mengubah warna menjadi merah. hal ini boleh saja akan tetapi tidak efisien. 
+	 ketika ingin mengubah dari warna merah menjadi biru harus mengubah satu persatu yang tentunya tidak efisien. -->
+	<body>
+		<p>
+		CSS merupakan bahasanya <font color="red">desainer
+		web</font>.
+		Namun sebenarnya, apa itu CSS?
+		<br />
+	<font color="red">CSS </font> adalah kumpulan kode yang
+		digunakan
+		untuk mendefenisikan desain dari bahasa markup,
+	<font color="red">salah satunya adalah HTML</font>.
+		<br />
+		Dengan CSS kita bisa mengubah desain dari
+	<font color="red">text, warna, gambar dan latar
+		belakang</font>
+		dari (hampir) semua kode tag HTML.
+		</p>
+	</body>
+</html>
+
+<!DOCTYPE html>
+<!-- pada contoh kedua ini di tag font diubah menjadi tag span. tag span disini ditambah dengan class. pada contoh ini diberi class="warna". jadi ketika kita ingin 
+	 merubah warna dari merah ke biru kita tidak perlu untuk mengubah satu persatu. hanya mengubah pada class="warna" dan otomatis semua tag <style> yang memiliki 
+	 class "warna" akan berubah dan akan lebih efisien tentunya -->
+<html>
+	<head>
+		<title>Test Background Color CSS</title>
+		<style type="text/css">
+		.warna {
+		color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<p>
+		CSS merupakan bahasanya <span class=warna>desainer
+		web</span>.
+		Namun sebenarnya, apa itu CSS?
+		<br />
+		<span class=warna>CSS </span>adalah kumpulan kode
+		yang digunakan untuk mendefenisikan desain dari bahasa
+		markup,
+		<span class=warna>salah satunya adalah HTML</span>.
+		<br />
+		Dengan CSS kita bisa mengubah desain dari
+		<span class=warna>text, warna, gambar dan latar
+		belakang</span>
+		dari (hampir) semua kode tag HTML.
+		</p>
+	</body>
+</html>
+<!-- dibawah ini adalah contoh saya sendiri :V -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Background Color CSS</title>
+		<style type="text/css">
+		.warna {
+		color: orange;
+		}
+		.warna1 { 
+		color: green;
+		}
+		.warna2 {
+		color: blue;
+		}
+		.warna3 {
+		color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<p>
+		CSS merupakan bahasanya <span class=warna>desainer
+		web</span>.
+		Namun sebenarnya, apa itu CSS?
+		<br />
+		<span class=warna1>CSS </span>
+		<span class= warna1> adalah kumpulan kode
+		yang digunakan untuk mendefenisikan desain dari bahasa
+		markup, </span>
+		<span class=warna2>salah satunya adalah HTML</span>.
+		<br />
+		Dengan CSS kita bisa mengubah desain dari
+		<span class=warna3>text, warna, gambar dan latar
+		belakang</span>
+		dari (hampir) semua kode tag HTML.
+		</p>
+	</body>
+</html>

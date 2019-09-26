@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- untuk meng inputkan kode css kedalam html terdapat beberapa cara yaitu inline, internal dan external. -->
+<!-- yang pertama akan saya jelaskan tentang input dengan cara inline atau langsung kedalam tag html -->
+<!-- inline sendiri di inputkan pada bagian body dari html. cara ini sangat praktis akan tetapi tidak dianjurkan untuk menggunakan cara ini karena css tidak terpisah dengan html.
+     sedangkan tujuan css dibuat agar tidak bercampur dengan html. -->
+<!-- pada contoh dibawah tag <h2> diberi atribut style dan value dari style tersebut adalah background hitam dengan tulisan yang berwarna putih -->
+<html>
+	<head>
+		<title>Contoh Inline Style CSS</title>
+	</head>
+	<body>
+		<h2 style="background-color:black; color:white" >
+		Text ini akan bewarna putih dan background warna
+		hitam (Inline)
+		</h2>
+	</body>
+</html>
+
+<!-- selanjutnya dibawah ini adalah contoh inputan yang kedua, yaitu internal Style Sheets -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contoh Internal Style CSS</title>
+	<style type="text/css">
+		h2 {
+		background-color:black;
+		color:white;
+		}
+	</style>
+	</head>
+	<body>
+		<h2>
+		Text ini akan bewarna putih dan background warna hitam (Internal)
+		</h2>
+	</body>
+</html>
+<!-- yang menjadi pembeda antara inline dengan internal yaitu terletak pada posisi css di inputkan. pada internal style kode css di inputkan di body Html. -->
+<!-- pada contoh kedua, pada bagian head di jelaskan bahwa h2 sebagai class dan memiliki value background hitam dengan tulisan berwarna putih. lalu pada body berisi 
+	 tulisan Text ini akan berwarna putih dan background warna hitam. -->
+<!-- pada body tidak terdapat kode css. hanya memanggil tag <h2> yang sudah di beri value css pada head html -->
+
+<!DOCTYPE html>
+<!-- Contoh yang ketiga yaitu External Style Sheets, yang berarti File Css terpisah dari Html dan harus dipanggil ke dalam html dengan 2 cara yaitu import dan link. ->
+<!-- yang pertama menggunakan tag import. kita sisipkan url yang sudah berisi Css di tag <style>. pada bagian ini bisa berupa link relatif yang pada contoh 
+	 dibawah adalah (Contoh Integrasi.css) -->
+<!-- lalu pada bagian body kita tidak usah memasukkan kode css lagi, kita hanya memasukkan text yang ingin kita munculkan pada html kita -->
+
+<html>
+	<head>
+		<title>Contoh External Style CSS</title>
+			<style type="text/css">
+				@import url(Contoh Integrasi.css);
+			</style>
+	</head>
+	<body>
+		<h2>
+		Text ini akan bewarna putih dan background warna hitam (External Import)
+		</h2>
+	</body>
+</html>
+<!-- yang kedua kita memakai tag link. pada tag link kita menggunakan atribut href yang berisi css yang kita inginkan. -->
+<!-- penggunaan tag import dan tag link meliki syarat yaitu nama file yang kita panggil harus sama dengan apa yang kita masukkan pada html -->
+<html>
+	<head>
+		<title>Contoh Inline Style CSS</title>
+		<link rel="stylesheet" type="text/css" href="Contoh Integrasi.css">
+	</head>
+	<body>
+		<h2>
+		Text ini akan bewarna putih dan background warna hitam (External Link)
+		</h2>
+	</body>
+</html>

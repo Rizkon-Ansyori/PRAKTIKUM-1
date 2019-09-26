@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<!-- pada contoh dibawah telah disisipkan file css urutan prioritas.css untuk dipanggil agar tag <h2> berwarna kuning. akan tetapi pada 
+	 tag <style> di jelaskan bahwa >h2> berwarna merah. yang terjadi adalah <h2> akan berwarna merah karena lebih di prioritaskan. -->
+<!-- seandainya tidak di sebutkan bahwa <h2> berwarna merah pada tag <style> maka akan berwarna kuning -->
+	<head>
+		<title>Contoh Kasus Cascading CSS</title>
+		<link rel="stylesheet" type="text/css"
+		href="css urutan prioritas.css">
+		<style type="text/css">
+		h2 {
+		color:red;
+		}
+		</style> 
+	</head>
+	<body>
+		<h2>
+		Akan berwarna apa saya?..1
+		</h2>
+		<h2 style="color:green">
+		Akan berwarna apa saya?..2
+		</h2>
+	</body>
+</html>

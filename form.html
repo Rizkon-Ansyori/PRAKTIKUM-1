@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Belajar Membuat Form </title>
+	</head>
+	<body>
+<!-- form memerlukan beberapa atribut. diantaranya action dan method -->
+		<form action=" form.html" method="get">
+<!-- yang pertama yaitu action. action disini berfungsi untuk menjelaskan kemana data akan dikirim. dan pada contoh di atas data akan dikirim pada form.html -->
+<!-- dan yang kedua yaitu method. method sendiri dibagi menjadi dua yaitu get atau post yang memiliki fungsi masing masing. untuk fungsi get yaitu memberi nilai 
+	 awal atau default pada atribut method.jika textbox tidak diisi maka nilai awal nya adalah "nama kamu" yang bertujuan menginformasikan kepada user bahwa form 
+	 tersebut berisi nama. -->
+<!-- selain atribut form juga menggunakan tag <input> yang digunakan untuk textbox, password, checkbox, yang mana semua menggunakan tag input -->
+		
+<!-- pada tag input Nama menggunakan input type "text" yang berfungsi untuk menerima input an berupa text dan input an yang tidak bersifat sensitif seperti hal 
+	 nya password -->
+		Nama: <input type="text" name="nama" value="Nama Kamu" />
+		<br />
+<!-- pada tag input Password menggunakan input type "password". karena pada textbox password berisi data yang sensitif dan input an dari textbox password tidak 
+	 terlihat yang akan mengamankan data sensitif pengguna -->
+		Password: <input type="password" name="password" />
+		<br />
+<!-- Pada tag input Jenis Kelamin menggunakan input type "radio". karena pada Jenis Kelamin user hanya dapat memilih salah satu diantara pilihan yaitu laki laki 
+	 atau perempuan. -->
+<!-- Pada tag input Jenik Kelamin Laki laki terdapat atribut checked yang berarti  checkbox langsung terpilih jenis kelamin laki laki -->
+		Jenis Kelamin : 
+		<input type="radio" name="jenis_kelamin" value="laki-laki"
+		checked /> /
+		Laki - Laki
+			<input type="radio" name="jenis_kelamin" value="perempuan" /> 
+		Perempuan
+			<br />
+<!-- tag input type pada hoby yaitu "checkbox". apabila radio user hanya dapat memilih satu, pada checkbox user bisa memilih lebih dari satu pilihan contohnya 
+	 disini hobi. pada hobi terdapat beberapa pilihan yaitu memancing, membaca dan menulis. -->
+		Hobi:
+		<input type="checkbox" name="hobi_baca" /> Membaca Buku 
+		<input type="checkbox" name="hobi_nulis" /> Menulis	
+		<input type="checkbox" name="hobi_mancing" /> Memancing
+		<br />
+<!-- pada Asal Kota digunakan dua inputan yaitu Select dan Option. Select berfungsi sebagai wadah dari beberapa pilihan yang disediakan. sementara Option adalah 
+	 isi dari pilihan tersebut. Disini kita bisa memberikan value pada option. akan tetapi, ada atau tidaknya value tidak berpengaruh pada tampilan form. -->
+		Asal Kota:
+		<select name="asal_kota" >
+			<option value="Kota Jakarta"> Jakarta</option>
+			<option>Bandung</option>
+			<option value="Kota Semarang" selected>Semarang</option>
+		</select>
+		<br />
+		Komentar Anda:
+		<textarea name="komentar" rows="5" cols="20">
+		Silahkan katakan isi hati anda
+			</textarea>
+		<br />
+
+	<input type="submit" value="Mulai Proses!" >
+
+		</form>
+	</body>
+</html>
+ 
